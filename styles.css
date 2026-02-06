@@ -1,0 +1,275 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu Mono", monospace;
+  color: #ffffff;
+  background-color: #2c2c2e;
+}
+
+/* Intro Section */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.intro-content {
+  text-align: center;
+  font-weight: bold;
+}
+
+.intro-title {
+  font-size: 3rem;
+  min-height: 4rem;
+}
+
+/* Icons */
+.icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.icon-link {
+  color: #9ca3af;
+  transition: color 0.2s;
+}
+
+.icon-link:hover {
+  color: #e5e7eb;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Typewriter */
+.typewriter {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typewriter 16s infinite;
+}
+
+.typewriter::after {
+  content: "|";
+  animation: blink 1s step-start infinite;
+  margin-left: 0.05em;
+}
+
+@keyframes typewriter {
+  /* Type "Tiago Conte" */
+  0% {
+    content: "";
+  }
+  2% {
+    content: "T";
+  }
+  4% {
+    content: "Ti";
+  }
+  6% {
+    content: "Tia";
+  }
+  8% {
+    content: "Tiag";
+  }
+  10% {
+    content: "Tiago";
+  }
+  12% {
+    content: "Tiago ";
+  }
+  14% {
+    content: "Tiago C";
+  }
+  16% {
+    content: "Tiago Co";
+  }
+  18% {
+    content: "Tiago Con";
+  }
+  20% {
+    content: "Tiago Cont";
+  }
+  22% {
+    content: "Tiago Conte";
+  }
+
+  /* Hold "Tiago Conte" */
+  22%,
+  38% {
+    content: "Tiago Conte";
+  }
+
+  /* Erase "Tiago Conte" */
+  40% {
+    content: "Tiago Cont";
+  }
+  41% {
+    content: "Tiago Con";
+  }
+  42% {
+    content: "Tiago Co";
+  }
+  43% {
+    content: "Tiago C";
+  }
+  44% {
+    content: "Tiago ";
+  }
+  45% {
+    content: "Tiago";
+  }
+  46% {
+    content: "Tiag";
+  }
+  47% {
+    content: "Tia";
+  }
+  48% {
+    content: "Ti";
+  }
+  49% {
+    content: "T";
+  }
+  50% {
+    content: "";
+  }
+
+  /* Type "Software Engineer" */
+  51% {
+    content: "S";
+  }
+  52% {
+    content: "So";
+  }
+  53% {
+    content: "Sof";
+  }
+  54% {
+    content: "Soft";
+  }
+  55% {
+    content: "Softw";
+  }
+  56% {
+    content: "Softwa";
+  }
+  57% {
+    content: "Softwar";
+  }
+  58% {
+    content: "Software";
+  }
+  59% {
+    content: "Software ";
+  }
+  60% {
+    content: "Software E";
+  }
+  61% {
+    content: "Software En";
+  }
+  62% {
+    content: "Software Eng";
+  }
+  63% {
+    content: "Software Engi";
+  }
+  64% {
+    content: "Software Engin";
+  }
+  65% {
+    content: "Software Engine";
+  }
+  66% {
+    content: "Software Enginee";
+  }
+  67% {
+    content: "Software Engineer";
+  }
+
+  /* Hold "Software Engineer" */
+  67%,
+  83% {
+    content: "Software Engineer";
+  }
+
+  /* Erase "Software Engineer" */
+  84% {
+    content: "Software Enginee";
+  }
+  85% {
+    content: "Software Engine";
+  }
+  86% {
+    content: "Software Engin";
+  }
+  87% {
+    content: "Software Engi";
+  }
+  88% {
+    content: "Software Eng";
+  }
+  89% {
+    content: "Software En";
+  }
+  90% {
+    content: "Software E";
+  }
+  91% {
+    content: "Software ";
+  }
+  92% {
+    content: "Software";
+  }
+  93% {
+    content: "Softwar";
+  }
+  94% {
+    content: "Softwa";
+  }
+  95% {
+    content: "Softw";
+  }
+  96% {
+    content: "Soft";
+  }
+  97% {
+    content: "Sof";
+  }
+  98% {
+    content: "So";
+  }
+  99% {
+    content: "S";
+  }
+  100% {
+    content: "";
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .intro-title {
+    font-size: 2rem;
+  }
+}
